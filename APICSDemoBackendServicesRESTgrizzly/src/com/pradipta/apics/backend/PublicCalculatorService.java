@@ -14,6 +14,9 @@ public interface PublicCalculatorService {
 	
 	public int addPOST(CalculatorInputBean calcInput);
 	
+	public CalculatorInputBean addPOST2(CalculatorInputBean calcInput);
+	public CalculatorInputBean2 addPOST3(CalculatorInputBean2 calcInput);
+	
 	public int subtractPOST(CalculatorInputBean calcInput);
 	
 	public int multiplyPOST(CalculatorInputBean calcInput);

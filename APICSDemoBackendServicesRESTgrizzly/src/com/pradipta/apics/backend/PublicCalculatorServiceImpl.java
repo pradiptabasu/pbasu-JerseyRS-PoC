@@ -28,7 +28,27 @@ public class PublicCalculatorServiceImpl implements PublicCalculatorService {
 		// TODO Auto-generated method stub
 		return calcInput.getNum1() + calcInput.getNum2();
 	}
-
+	
+	@Override
+	@POST
+	@Path("add2")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public CalculatorInputBean addPOST2(CalculatorInputBean calcInput) {
+		// TODO Auto-generated method stub
+		CalculatorInputBean obj = new CalculatorInputBean();
+		return obj;
+	}
+	
+	@Override
+	@POST
+	@Path("add3")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public CalculatorInputBean2 addPOST3(CalculatorInputBean2 calcInput) {
+		// TODO Auto-generated method stub
+		CalculatorInputBean2 obj = new CalculatorInputBean2();
+		return obj;
+	}
+	
 	@Override
 	@POST
 	@Path("subtract")
